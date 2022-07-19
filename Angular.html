@@ -1,0 +1,57 @@
+<html>
+	<head>
+	    <title>Angular</title>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	</head>
+	
+
+	<body>
+
+
+		<nav class="navbar navbar-default">
+	  		<div class="container-fluid">
+	    	<div class="navbar-header">
+	      		<a class="navbar-brand" href="#"><img style="max-width:100px; margin-top: -7px;"src="http://entrepregirlbg.com/wp-content/uploads/2018/12/cisco-gs5.png"></a>
+	    	</div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#">Home</a></li>
+		      <li><a href="#">vEdge</a></li>
+		      <li><a href="#">vBond </a></li>
+		      <li><a href="#">vSmart</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		    </ul>
+	  		</div>
+		</nav>
+
+
+		<div class="container jumbotron-fluid" ng-app="vManageApp" ng-controller="vManageAppController" ng-init="productName='viptela and IWAN'; bu=['routing', 'switching', 'DNAC', 'Witreless Access','SPA','IIOT','IOS-XE']">
+			<input type="text" ng-model="clusterName" placeholder="Enter your VManage Cluster Name" class="form-control"><br>
+			<form name="myForm">
+				 <input type="email" name="clientEmail" ng-model="text" class="form-control" placeholder="Enter Email for Validation">
+		  		<span ng-show="myForm.clientEmail.$error.email">Not a valid e-mail address</span>
+		  		<button>Submit</button>
+  			</form>
+		<code> Issued Command: Actiavte {{clusterName}} </code><br><br>
+		<code>Product Name : {{productName}}</code><hr>
+		<h3>List of BU in Enterprise Networking</h3>
+		<ul>
+			<li ng-repeat="x in bu">
+				{{x}}
+			</li>
+		</ul>
+
+		<ciscoFooter></ciscoFooter>
+		<script>
+			var app= angular.module('vManageApp',[]);
+			app.controller('vManageAppController',  function($scope){});
+			app.directive('ciscoFooter',function(){return {template:"<h1> Made with love by Ashish Jha</h1>"};});
+		</script>
+		
+		</div>
+		
+	</body>
+</html>
