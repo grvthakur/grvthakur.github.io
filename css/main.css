@@ -139,12 +139,12 @@ body {
      body {
       font: 12px Montserrat, sans-serif;
       line-height: 1.8;
-      color: #29282b;
+      color: #2f2f2c;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-      background-color: #b1b16e; /* Green */
+      background-color: #29282b; /* Green */
       color: #ffffff;
   }
   .bg-2 { 
