@@ -535,3 +535,22 @@ window.addEventListener("DOMContentLoaded", function () {
     ".nav-link.active{color:var(--accent)!important;background:var(--accent-dim)!important}";
   document.head.appendChild(s);
 })();
+
+/* ── THEME TOGGLE ── */
+(function () {
+  var btn = document.getElementById("themeToggle");
+  var icon = document.getElementById("themeIcon");
+  if (!btn) return;
+
+  // Restore saved preference
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode");
+    icon.className = "fa-solid fa-sun";
+  }
+
+  btn.addEventListener("click", function () {
+    var isLight = document.body.classList.toggle("light-mode");
+    icon.className = isLight ? "fa-solid fa-sun" : "fa-solid fa-moon";
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  });
+})();
