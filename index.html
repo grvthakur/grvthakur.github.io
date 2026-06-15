@@ -2,621 +2,830 @@
 <html lang="en">
 
 <head>
-  <title>Gaurav Thakur | Data Engineer</title>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130937309-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-130937309-1');
-  </script>
-
+  <title>Gaurav Thakur — Data Engineer</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Gaurav Thakur — Databricks Certified Data Engineer with 5+ years building scalable pipelines, ETL/ELT workflows, and cloud data solutions at TCS.">
-  <link rel="canonical" href="https://grvthakur.github.io/">
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Gaurav Thakur | Data Engineer · Databricks Certified">
-  <meta property="og:description"
-    content="Databricks Certified Data Engineer with 5+ years at TCS. Apache Spark, PySpark, Delta Lake, SQL, AWS.">
-  <meta property="og:url" content="https://grvthakur.github.io/">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/grvthakur/grvthakur.github.io/ddddc63f75428be78bc8feb913adc46fd8fa3278/img/IMG_20190310_151157_331.jpg">
-  <meta property="og:site_name" content="Gaurav Thakur | Data Engineer">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gaurav Thakur | Data Engineer · Databricks Certified">
-  <meta name="twitter:site" content="@grv_here">
-  <link rel="icon" href="img/logo.jpg" sizes="32x32">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    content="Gaurav Thakur — Databricks Certified Data Engineer with 5+ years at TCS. Apache Spark, PySpark, Delta Lake, ETL/ELT pipelines, AWS." />
+  <meta property="og:title" content="Gaurav Thakur — Data Engineer" />
+  <meta property="og:description" content="Building data infrastructure that turns raw signals into decisions." />
+  <meta property="og:url" content="https://grvthakur.github.io/" />
+  <link rel="icon" href="img/logo.jpg" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/main.css">
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
 
-  <!-- ── NAVBAR ── -->
+  <!-- ══ ATOM NETWORK CANVAS ══ -->
+  <canvas id="atom-canvas" aria-hidden="true"></canvas>
+  <!-- ══ CURSOR GLOW ══ -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+  <!-- ══ SCROLL BEAM ══ -->
+  <div id="scroll-beam" aria-hidden="true"></div>
+
+  <!-- ══ NAVBAR ══ -->
   <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-brand">GT</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">GT<span class="nav-brand-year">v2026</span></a>
+      <span class="nav-meta">Pune, India · <span class="nav-pipe">{ }</span> → pipelines</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#certifications" class="nav-link">Certs</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="files/grv-resume-web.pdf" class="nav-link nav-resume" target="_blank">Resume <i
+        <li><a href="#about" class="nav-link">01 / About</a></li>
+        <li><a href="#projects" class="nav-link">02 / Projects</a></li>
+        <li><a href="#skills" class="nav-link">03 / Skills</a></li>
+        <li><a href="#experience" class="nav-link">04 / Experience</a></li>
+        <li><a href="#certifications" class="nav-link">05 / Certs</a></li>
+        <li><a href="#contact" class="nav-link">06 / Contact</a></li>
+        <li><a href="files/grv-resume-web.pdf" class="nav-resume" target="_blank">Resume <i
               class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ── HERO ── -->
+  <!-- ══ HERO ══ -->
   <section class="hero" id="home">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
-    <!-- Pipeline animation nodes -->
-    <div class="pipeline-bg" aria-hidden="true">
-      <div class="pipe-node" style="top:15%;left:8%"><i class="fa-solid fa-database"></i></div>
-      <div class="pipe-node" style="top:72%;left:5%"><i class="fa-solid fa-cloud"></i></div>
-      <div class="pipe-node" style="top:20%;right:7%"><i class="fa-solid fa-bolt"></i></div>
-      <div class="pipe-node" style="top:75%;right:9%"><i class="fa-solid fa-chart-line"></i></div>
-      <div class="pipe-node" style="top:45%;left:3%"><i class="fa-solid fa-code-branch"></i></div>
-      <div class="pipe-node" style="top:50%;right:4%"><i class="fa-solid fa-layer-group"></i></div>
-    </div>
+    <div class="hero-inner">
 
-    <div class="hero-content">
-      <p class="hero-eyebrow"><span class="badge-cert"><i class="fa-solid fa-certificate"></i> Databricks
-          Certified</span></p>
-      <h1 class="hero-name">Gaurav Thakur</h1>
-      <h2 class="hero-role">
-        <span class="typewrite" data-period="500"
-          data-type='["Data Engineer @ TCS · 5+ Years.", "Apache Spark & PySpark Developer.", "Delta Lake & Medallion Architecture.", "ETL/ELT Pipeline Architect.", "Databricks Certified Professional."]'>
+      <p class="hero-eyebrow">
+        <span class="mono dim">$ whoami →</span>
+        <span class="hero-role typewrite" data-period="500"
+          data-type='["Data Engineer","Pipeline Architect","Spark Developer","Databricks Professional"]'>
           <span class="wrap"></span>
         </span>
-      </h2>
-      <p class="hero-quote">Building the data infrastructure that turns raw signals into decisions.</p>
-
-      <div class="hero-photo-wrapper">
-        <div class="hero-photo-ring"></div>
-        <img src="img/grv.jpg" alt="Gaurav Thakur" class="hero-photo">
-      </div>
-
-      <div class="hero-stats">
-        <div class="h-stat"><span class="h-stat-n">5+</span><span class="h-stat-l">Years Exp.</span></div>
-        <div class="h-stat-divider"></div>
-        <div class="h-stat"><span class="h-stat-n">2</span><span class="h-stat-l">Databricks Certs</span></div>
-        <div class="h-stat-divider"></div>
-        <div class="h-stat"><span class="h-stat-n">40%</span><span class="h-stat-l">Pipeline Speedup</span></div>
-        <div class="h-stat-divider"></div>
-        <div class="h-stat"><span class="h-stat-n">25%</span><span class="h-stat-l">Data Quality Gain</span></div>
-      </div>
-
-      <div class="hero-socials">
-        <a href="https://github.com/grvthakur" class="social-btn" title="GitHub" target="_blank"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/gaurav-thakur-749547105/" class="social-btn" title="LinkedIn"
-          target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://twitter.com/grv_here" class="social-btn" title="Twitter" target="_blank"><i
-            class="fa-brands fa-twitter"></i></a>
-        <a href="mailto:thakurg457@gmail.com" class="social-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-ghost">Get In Touch</a>
-      </div>
-    </div>
-
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ── ABOUT ── -->
-  <section class="section section-about" id="about">
-    <div class="section-container">
-      <div class="section-label">About</div>
-      <h2 class="section-title">Who Am I?</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I'm a <strong>Data Engineer at Tata Consultancy Services (TCS)</strong> with over 5 years of experience
-            designing and delivering scalable data infrastructure. I hold dual <strong>Databricks Certified Data
-              Engineer</strong> credentials — Professional (Mar 2026) and Associate (Oct 2025) — and specialize in
-            <strong>Apache Spark, PySpark, Delta Lake, and ETL/ELT pipeline architecture</strong> on cloud and
-            on-premise platforms.</p>
-          <p>My work focuses on Medallion Architecture, Delta Live Tables, and Databricks Workflows — building reliable
-            data systems that deliver high-quality data to downstream consumers at scale. Beyond the lakehouse, I've
-            built strong foundations in <strong>MS SQL Server, T-SQL performance tuning, REST API ingestion, and data
-              governance with Unity Catalog</strong>.</p>
-          <p>I graduated in Electrical & Electronics Engineering from <strong>Birla Institute of Technology,
-              Ranchi</strong>, which taught me to think in systems — a mindset that translates well to data engineering.
-          </p>
-          <div class="about-github">
-            <iframe src="https://ghbtns.com/github-btn.html?user=grvthakur&type=follow&count=true&size=large"
-              frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
-          </div>
-          <a href="files/grv-resume-web.pdf" class="btn-primary" target="_blank">Download Resume <i
-              class="fa-solid fa-download"></i></a>
-        </div>
-        <div class="about-visual">
-          <div class="about-card-stack">
-            <div class="about-stat-card">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Years at TCS</span>
-            </div>
-            <div class="about-stat-card">
-              <span class="stat-number">2×</span>
-              <span class="stat-label">Databricks Certified</span>
-            </div>
-            <div class="about-stat-card">
-              <span class="stat-number">40%</span>
-              <span class="stat-label">Pipeline Time Saved</span>
-            </div>
-            <div class="about-stat-card">
-              <span class="stat-number">25%</span>
-              <span class="stat-label">Data Quality Improved</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SKILLS ── -->
-  <section class="section section-skills" id="skills">
-    <div class="section-container">
-      <div class="section-label">Skills</div>
-      <h2 class="section-title">Technical Stack</h2>
-
-      <div class="skills-grid">
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon"><i class="fa-solid fa-fire"></i></span>
-            <h3>Data Engineering Core</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Apache Spark</span>
-            <span class="skill-tag">PySpark</span>
-            <span class="skill-tag">Delta Lake</span>
-            <span class="skill-tag">Delta Live Tables</span>
-            <span class="skill-tag">ETL / ELT</span>
-            <span class="skill-tag">Medallion Architecture</span>
-            <span class="skill-tag">Batch Processing</span>
-            <span class="skill-tag">Data Modelling</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon"><i class="fa-solid fa-database"></i></span>
-            <h3>Databases & SQL</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">MS SQL Server</span>
-            <span class="skill-tag">T-SQL</span>
-            <span class="skill-tag">Stored Procedures</span>
-            <span class="skill-tag">Indexing & Query Opt.</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">SQL Agent Jobs</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon"><i class="fa-brands fa-databricks" style="font-style:normal">⬡</i></span>
-            <h3>Databricks & Lakehouse</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Databricks Workflows</span>
-            <span class="skill-tag">Unity Catalog</span>
-            <span class="skill-tag">Databricks Lakehouse</span>
-            <span class="skill-tag">ACID Compliance</span>
-            <span class="skill-tag">Data Governance</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon"><i class="fa-brands fa-aws"></i></span>
-            <h3>Cloud & Infrastructure</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">AWS S3</span>
-            <span class="skill-tag">AWS EC2</span>
-            <span class="skill-tag">OpenShift</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Git</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon"><i class="fa-solid fa-code"></i></span>
-            <h3>Languages & Integration</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">PowerShell</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">JSON Processing</span>
-            <span class="skill-tag">XML</span>
-            <span class="skill-tag">Denodo</span>
-            <span class="skill-tag">JavaScript</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon"><i class="fa-solid fa-chart-bar"></i></span>
-            <h3>Analytics & Visualization</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Microsoft Power BI</span>
-            <span class="skill-tag">Excel</span>
-            <span class="skill-tag">Data Quality Frameworks</span>
-            <span class="skill-tag">Data Validation</span>
-            <span class="skill-tag">HP ALM</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Pipeline visual -->
-      <div class="pipeline-flow" aria-label="Data pipeline flow diagram">
-        <div class="pf-stage">
-          <div class="pf-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
-          <div class="pf-label">Ingest</div>
-          <div class="pf-sub">REST API · S3 · SQL</div>
-        </div>
-        <div class="pf-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="pf-stage">
-          <div class="pf-icon"><i class="fa-solid fa-layer-group"></i></div>
-          <div class="pf-label">Transform</div>
-          <div class="pf-sub">PySpark · T-SQL · Delta</div>
-        </div>
-        <div class="pf-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="pf-stage">
-          <div class="pf-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <div class="pf-label">Validate</div>
-          <div class="pf-sub">DQ Framework · ACID</div>
-        </div>
-        <div class="pf-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="pf-stage">
-          <div class="pf-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <div class="pf-label">Serve</div>
-          <div class="pf-sub">Power BI · APIs · DWH</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── EXPERIENCE ── -->
-  <section class="section section-timeline" id="experience">
-    <div class="section-container">
-      <div class="section-label">Experience</div>
-      <h2 class="section-title">Career Journey</h2>
-
-      <div class="timeline">
-
-        <div class="timeline-item" data-side="left">
-          <div class="timeline-dot timeline-dot--active"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">Apr 2023 — Present</div>
-            <h3 class="timeline-title">System Engineer (Data Engineer) — TCS, Pune</h3>
-            <ul class="timeline-bullets">
-              <li>Designed and maintained ETL/ELT pipelines ingesting data from external REST APIs into MS SQL Server —
-                parsing JSON payloads into structured relational tables serving downstream analytics.</li>
-              <li>Built a SQL-based <strong>data quality & validation framework</strong> with integrity checks across
-                production datasets, reducing data discrepancies by <strong>25%</strong>.</li>
-              <li>Engineered optimized T-SQL stored procedures, functions, and triggers to power batch transformation
-                workflows, cutting processing time by <strong>~40%</strong>.</li>
-              <li>Designed indexing strategies and analysed execution plans to maximize pipeline throughput in
-                high-volume OLTP environments.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tl-tag">ETL/ELT</span>
-              <span class="tl-tag">T-SQL</span>
-              <span class="tl-tag">Data Quality</span>
-              <span class="tl-tag">REST APIs</span>
-              <span class="tl-tag">MS SQL Server</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-side="right">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">Apr 2022 — Mar 2023</div>
-            <h3 class="timeline-title">Asst. System Engineer (Data Engineer) — TCS, Pune</h3>
-            <ul class="timeline-bullets">
-              <li>Developed <strong>Denodo virtual data layer</strong> views exposing SQL Server datasets via REST web
-                service — decoupling storage from consumption layers.</li>
-              <li>Built Python/PowerShell data ingestion pipeline to extract JSON from a UMS interface API and
-                batch-load into SQL Server staging tables, automating a previously manual process.</li>
-              <li>Managed deployments of pipeline code and database objects across QA and production environments.</li>
-              <li>Surfaced real-time operational data to end users via React front-end consuming backend data APIs.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tl-tag">Python</span>
-              <span class="tl-tag">PowerShell</span>
-              <span class="tl-tag">Denodo</span>
-              <span class="tl-tag">JSON Ingestion</span>
-              <span class="tl-tag">React</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-side="left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">Apr 2021 — Mar 2022</div>
-            <h3 class="timeline-title">Asst. System Engineer Trainee (Data Engineer) — TCS, Pune</h3>
-            <ul class="timeline-bullets">
-              <li>Contributed to the Manufacturing Inventory Database (MIND) project — building multi-source ingestion
-                (SQL, REST APIs, Excel, XML) into a unified data layer aligned with Medallion Architecture principles.
-              </li>
-              <li>Developed staging-to-production loading pipelines using T-SQL cursors, triggers, and transaction
-                management.</li>
-              <li>Created SQL Agent Jobs to automate recurring data refresh, reducing manual intervention.</li>
-              <li>Designed normalized MS SQL Server schemas (tables, constraints, clustered/non-clustered indexes).</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tl-tag">Medallion Architecture</span>
-              <span class="tl-tag">T-SQL</span>
-              <span class="tl-tag">SQL Agent</span>
-              <span class="tl-tag">Data Modelling</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-side="right">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">2016 — 2020</div>
-            <h3 class="timeline-title">B.E. Electrical & Electronics — BIT Ranchi</h3>
-            <p>Birla Institute of Technology, Ranchi · CGPA: 6.6 / 10.0</p>
-            <div class="timeline-tags">
-              <span class="tl-tag">Engineering</span>
-              <span class="tl-tag">Systems Thinking</span>
-              <span class="tl-tag">BIT Ranchi</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PROJECTS ── -->
-  <section class="section section-projects" id="projects">
-    <div class="section-container">
-      <div class="section-label">Projects</div>
-      <h2 class="section-title">What I've Built</h2>
-      <p class="section-subtitle">Data engineering and full-stack projects. More on <a
-          href="https://github.com/grvthakur" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>.</p>
-
-      <div class="projects-grid">
-
-        <div class="project-card project-card--featured">
-          <div class="project-card-top">
-            <span class="project-icon"><i class="fa-solid fa-wallet"></i></span>
-            <div class="project-links">
-              <a href="https://github.com/grvthakur/ExpenseTracker" target="_blank" title="Repo"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://grvthakur.github.io/Expense-Tracker/" target="_blank" title="Demo"><i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-desc">Full-stack expense management app with REST API integration and a React front-end —
-            tracks income and expenses visually with live data updates.</p>
-          <div class="project-tech">
-            <span>React</span><span>REST API</span><span>JavaScript</span><span>CSS3</span>
-          </div>
-        </div>
-
-        <div class="project-card project-card--featured">
-          <div class="project-card-top">
-            <span class="project-icon"><i class="fa-solid fa-utensils"></i></span>
-            <div class="project-links">
-              <a href="https://github.com/grvthakur/FOODCart" target="_blank" title="Repo"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://grvthakur.github.io/FOODCart/" target="_blank" title="Demo"><i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">FoodCart</h3>
-          <p class="project-desc">Demo food ordering platform consuming live REST APIs for real-time menu data
-            population — demonstrates API data ingestion and state management patterns.</p>
-          <div class="project-tech">
-            <span>React</span><span>Redux</span><span>REST API</span><span>JavaScript</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-icon"><i class="fa-solid fa-t"></i></span>
-            <div class="project-links">
-              <a href="https://github.com/grvthakur/textUtils" target="_blank" title="Repo"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://grvthakur.github.io/textUtils/" target="_blank" title="Demo"><i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">TextUtils</h3>
-          <p class="project-desc">Text processing and analytics tool — word count, character count, case
-            transformations, and readability tools built with React.</p>
-          <div class="project-tech">
-            <span>React</span><span>Data Analysis</span><span>String API</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-icon"><i class="fa-solid fa-map-location-dot"></i></span>
-            <div class="project-links">
-              <a href="https://github.com/grvthakur/Mapty" target="_blank" title="Repo"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://grvthakur.github.io/Mapty/" target="_blank" title="Demo"><i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">Mapty</h3>
-          <p class="project-desc">Geospatial workout tracker logging runs and cycles on an interactive Leaflet map —
-            with local data persistence and OOP design patterns.</p>
-          <div class="project-tech">
-            <span>JavaScript</span><span>Leaflet.js</span><span>Geospatial</span><span>OOP</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-icon"><i class="fa-solid fa-quote-left"></i></span>
-            <div class="project-links">
-              <a href="https://github.com/grvthakur/addQuoteApp" target="_blank" title="Repo"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://quoteapp-7b81c.web.app/quotes" target="_blank" title="Demo"><i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">MyQuote</h3>
-          <p class="project-desc">Personal quotes diary with Firebase backend — demonstrates real-time database
-            read/write patterns and NoSQL data management.</p>
-          <div class="project-tech">
-            <span>Firebase</span><span>NoSQL</span><span>JavaScript</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-icon"><i class="fa-solid fa-list-check"></i></span>
-            <div class="project-links">
-              <a href="https://github.com/grvthakur/to-do" target="_blank" title="Repo"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://grvthakur.github.io/to-do/" target="_blank" title="Demo"><i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">To Do App</h3>
-          <p class="project-desc">React-based task manager with persistent local storage — clean state management and
-            component architecture.</p>
-          <div class="project-tech">
-            <span>React</span><span>LocalStorage</span><span>State Mgmt</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CERTIFICATIONS ── -->
-  <section class="section section-certs" id="certifications">
-    <div class="section-container">
-      <div class="section-label">Certifications</div>
-      <h2 class="section-title">Credentials</h2>
-      <p class="section-subtitle">Verified certifications across data engineering, cloud, and programming disciplines.
       </p>
 
+      <h1 class="hero-name">
+        Gaurav Thakur.<br />
+        <span class="hero-name-sub">Data pipelines<br />
+          <span class="accent-text">that actually deliver.</span></span>
+      </h1>
+
+      <!-- photo -->
+      <div class="hero-photo-row">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <img src="img/grv.jpg" alt="Gaurav Thakur — Data Engineer" class="hero-photo" />
+          <div class="hero-photo-badge"><i class="fa-solid fa-certificate"></i> Databricks Certified</div>
+        </div>
+        <div class="hero-text-col">
+          <p class="hero-desc">
+            I design and ship production data pipelines end-to-end — REST API ingestion, PySpark transformations,
+            Delta Lake storage, and the data quality guardrails that make downstream consumers trust the numbers.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#projects" class="btn-primary">Explore the work <span class="btn-arrow">↓</span></a>
+            <a href="#contact" class="btn-ghost">Get in touch</a>
+          </div><!-- /hero-cta-row -->
+        </div><!-- /hero-text-col -->
+      </div><!-- /hero-photo-row -->
+
+      <!-- terminal log card -->
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot t-red"></span>
+          <span class="t-dot t-yellow"></span>
+          <span class="t-dot t-green"></span>
+          <span class="t-title mono">pipeline.log</span>
+        </div>
+        <div class="terminal-body">
+          <p class="tl"><span class="t-prompt">$</span> spark-submit pipeline.py <span class="t-flag">--env prod</span>
+          </p>
+          <p class="tl"><span class="t-ok">✓</span> bronze layer ingested · 2.4M rows · REST API</p>
+          <p class="tl"><span class="t-ok">✓</span> silver transforms applied · PySpark · Delta Lake</p>
+          <p class="tl"><span class="t-ok">✓</span> DQ checks passed · 0 nulls · referential integrity</p>
+          <p class="tl"><span class="t-ok">✓</span> gold layer written · downstream ready · 3.1s</p>
+          <p class="tl blink-line"><span class="t-prompt">$</span> <span class="cursor">▊</span></p>
+        </div>
+      </div>
+
+      <!-- stats -->
+      <div class="hero-stats">
+        <div class="h-stat"><span class="h-stat-n" data-target="5" data-suffix="+">0+</span><span class="h-stat-l">Years
+            at TCS</span></div>
+        <div class="h-stat-div"></div>
+        <div class="h-stat"><span class="h-stat-n" data-target="2" data-suffix="×">0×</span><span
+            class="h-stat-l">Databricks Certified</span></div>
+        <div class="h-stat-div"></div>
+        <div class="h-stat"><span class="h-stat-n" data-target="40" data-suffix="%">0%</span><span
+            class="h-stat-l">Pipeline Speedup</span></div>
+        <div class="h-stat-div"></div>
+        <div class="h-stat"><span class="h-stat-n" data-target="25" data-suffix="%">0%</span><span class="h-stat-l">Data
+            Quality Gain</span></div>
+      </div>
+
+    </div>
+
+    <div class="scroll-cue">
+      <span class="mono dim">scroll</span>
+      <div class="scroll-line-anim"></div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION BEAM ══ -->
+  <div class="section-beam" id="sectionBeam"></div>
+
+  <!-- ══ 01 / ABOUT ══ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-eyebrow"><span class="mono">01 / About</span></div>
+      <h2 class="section-heading">Engineer of<br /><em>reliable data.</em></h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>Data Engineer at Tata Consultancy Services (TCS)</strong> with 5+ years of experience
+            building scalable data infrastructure. I hold dual <strong>Databricks Certified Data Engineer</strong>
+            credentials — Professional (Mar 2026) &amp; Associate (Oct 2025).</p>
+
+          <p>My core work: designing <strong>ETL/ELT pipelines</strong> that ingest from REST APIs and heterogeneous
+            sources, transform with <strong>Apache Spark / PySpark</strong>, land in <strong>Delta Lake</strong> under
+            Medallion Architecture, and serve clean, validated data to downstream BI and ML consumers.</p>
+
+          <p>Beyond the lakehouse I have deep roots in <strong>MS SQL Server, T-SQL performance tuning,
+              and data quality frameworks</strong> — the unglamorous plumbing that makes production pipelines
+            trustworthy.</p>
+
+          <div class="about-principles">
+            <div class="principle-card">
+              <span class="principle-num mono">01</span>
+              <h4>Measure data quality</h4>
+              <p>Don't claim a pipeline is clean until the DQ framework says so. Checks are first-class, not
+                afterthoughts.</p>
+            </div>
+            <div class="principle-card">
+              <span class="principle-num mono">02</span>
+              <h4>Schema as contract</h4>
+              <p>Downstream consumers depend on structural guarantees. Schema drift is a production incident waiting to
+                happen.</p>
+            </div>
+            <div class="principle-card">
+              <span class="principle-num mono">03</span>
+              <h4>Idempotent by default</h4>
+              <p>Every pipeline run should be safe to re-run. Delta Lake + ACID compliance makes this non-negotiable.
+              </p>
+            </div>
+            <div class="principle-card">
+              <span class="principle-num mono">04</span>
+              <h4>Config over hardcode</h4>
+              <p>Connection strings, thresholds, and schedules live in config — not buried in transformation logic.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-aside">
+          <div class="stat-stack">
+            <div class="stat-card"><span class="stat-n" data-target="5" data-suffix="+">0</span><span
+                class="stat-l">Years at TCS</span></div>
+            <div class="stat-card accent-card"><span class="stat-n" data-target="2" data-suffix="×">0</span><span
+                class="stat-l">Databricks Certified</span></div>
+            <div class="stat-card"><span class="stat-n" data-target="40" data-suffix="%">0</span><span
+                class="stat-l">Pipeline Time Saved</span></div>
+            <div class="stat-card"><span class="stat-n" data-target="25" data-suffix="%">0</span><span
+                class="stat-l">Data Quality Improved</span></div>
+          </div>
+          <a href="files/grv-resume-web.pdf" class="btn-primary" target="_blank"
+            style="margin-top:1.5rem;display:inline-flex">
+            Download Resume <i class="fa-solid fa-download" style="margin-left:.5rem"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 02 / PROJECTS ══ -->
+  <section class="section section-dark" id="projects">
+    <div class="section-inner">
+      <div class="section-eyebrow"><span class="mono">02 / Projects</span></div>
+      <h2 class="section-heading">The work.</h2>
+      <p class="section-sub">Production pipelines, full-stack apps, and data engineering showcases. Each card flips to
+        show the pipeline log.</p>
+
+      <!-- Project cards grid -->
+      <div class="projects-grid">
+
+        <!-- PROJ 1 — Medallion ETL -->
+        <div class="proj-card featured" id="proj1">
+          <div class="proj-front">
+            <div class="proj-meta">
+              <span class="proj-num mono">01 · 2023 — Present</span>
+              <span class="proj-badge">Flagship</span>
+            </div>
+            <h3 class="proj-title">Medallion ETL Platform.</h3>
+            <p class="proj-tagline">Production-grade Databricks pipeline at TCS</p>
+            <p class="proj-desc">End-to-end ELT platform ingesting from REST APIs into Bronze → Silver → Gold Delta Lake
+              layers.
+              Built PySpark transformation jobs, Delta Live Tables for streaming, and a SQL-based DQ framework that
+              reduced
+              data discrepancies by 25%. Orchestrated via Databricks Workflows with Unity Catalog governance.</p>
+            <ul class="proj-bullets">
+              <li>▸ DQ framework with integrity checks across production datasets — 25% fewer discrepancies</li>
+              <li>▸ T-SQL stored procedures cutting batch processing time by ~40%</li>
+              <li>▸ Indexing strategies &amp; execution plan analysis for high-volume OLTP</li>
+              <li>▸ REST API → JSON parsing → structured relational tables pipeline</li>
+            </ul>
+            <div class="proj-tech-row">
+              <span>Apache Spark</span><span>PySpark</span><span>Delta Lake</span>
+              <span>Databricks</span><span>Unity Catalog</span><span>MS SQL Server</span>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj1')">pipeline.log <span>⟲</span></button>
+          </div>
+          <div class="proj-back">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+              <span class="t-title mono">medallion.log</span>
+            </div>
+            <div class="terminal-body">
+              <p class="tl"><span class="t-prompt">$</span> dbx workflow run --job medallion-daily</p>
+              <p class="tl"><span class="t-ok">✓</span> bronze: 2.4M rows ingested · REST API · S3</p>
+              <p class="tl"><span class="t-ok">✓</span> silver: PySpark transforms · dedup · type cast</p>
+              <p class="tl"><span class="t-ok">✓</span> DQ: 0 null PKs · ref integrity ✓ · ACID commit</p>
+              <p class="tl"><span class="t-ok">✓</span> gold: aggregates written · Power BI ready</p>
+              <p class="tl"><span class="t-stat">discrepancies ↓25% · batch time ↓40%</span></p>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj1')">← back</button>
+          </div>
+        </div>
+
+        <!-- PROJ 2 — Denodo Virtual Layer -->
+        <div class="proj-card featured" id="proj2">
+          <div class="proj-front">
+            <div class="proj-meta">
+              <span class="proj-num mono">02 · 2022 — 2023</span>
+              <span class="proj-badge">Flagship</span>
+            </div>
+            <h3 class="proj-title">Virtual Data Layer.</h3>
+            <p class="proj-tagline">Denodo + Python ingestion pipeline at TCS</p>
+            <p class="proj-desc">Built Denodo virtual data layer views exposing MS SQL Server datasets via REST web
+              service —
+              decoupling storage from consumption. Automated JSON ingestion from UMS interface API using
+              Python/PowerShell,
+              replacing a fully manual process and dramatically reducing ingestion time.</p>
+            <ul class="proj-bullets">
+              <li>▸ Denodo REST views decoupling storage from downstream consumers</li>
+              <li>▸ Python + PowerShell pipeline: UMS API → JSON → SQL Server staging</li>
+              <li>▸ Managed QA → prod deployments ensuring cross-env data consistency</li>
+              <li>▸ React frontend surfacing real-time operational data via backend APIs</li>
+            </ul>
+            <div class="proj-tech-row">
+              <span>Python</span><span>PowerShell</span><span>Denodo</span>
+              <span>REST APIs</span><span>MS SQL Server</span><span>React</span>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj2')">pipeline.log <span>⟲</span></button>
+          </div>
+          <div class="proj-back">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+              <span class="t-title mono">virtual-layer.log</span>
+            </div>
+            <div class="terminal-body">
+              <p class="tl"><span class="t-prompt">$</span> python ingest_ums.py --batch full</p>
+              <p class="tl"><span class="t-ok">✓</span> UMS API connected · auth header valid</p>
+              <p class="tl"><span class="t-ok">✓</span> JSON payload parsed · 18 fields mapped</p>
+              <p class="tl"><span class="t-ok">✓</span> staging load complete · 94K rows</p>
+              <p class="tl"><span class="t-ok">✓</span> Denodo view refreshed · REST endpoint live</p>
+              <p class="tl"><span class="t-stat">manual process → fully automated</span></p>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj2')">← back</button>
+          </div>
+        </div>
+
+        <!-- PROJ 3 — MIND ETL -->
+        <div class="proj-card" id="proj3">
+          <div class="proj-front">
+            <div class="proj-meta">
+              <span class="proj-num mono">03 · 2021 — 2022</span>
+            </div>
+            <h3 class="proj-title">MIND ETL Pipeline.</h3>
+            <p class="proj-tagline">Manufacturing Inventory Database — TCS</p>
+            <p class="proj-desc">Multi-source ETL from SQL DBs, REST APIs, Excel, and XML into a unified layer —
+              a foundational Medallion Architecture pattern. Built T-SQL cursor-based staging-to-prod loaders,
+              SQL Agent jobs for recurring refresh, and normalized schema design.</p>
+            <div class="proj-tech-row">
+              <span>T-SQL</span><span>SQL Agent</span><span>XML</span><span>Excel</span><span>REST APIs</span>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj3')">pipeline.log <span>⟲</span></button>
+          </div>
+          <div class="proj-back">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+              <span class="t-title mono">mind-etl.log</span>
+            </div>
+            <div class="terminal-body">
+              <p class="tl"><span class="t-prompt">$</span> sql-agent job run MIND_DAILY_REFRESH</p>
+              <p class="tl"><span class="t-ok">✓</span> sources: SQL · REST · Excel · XML</p>
+              <p class="tl"><span class="t-ok">✓</span> staging load · cursor batch · tx commit</p>
+              <p class="tl"><span class="t-ok">✓</span> prod promoted · ref integrity checked</p>
+              <p class="tl"><span class="t-stat">manual refresh → scheduled automation</span></p>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj3')">← back</button>
+          </div>
+        </div>
+
+        <!-- PROJ 4 — Expense Tracker -->
+        <div class="proj-card" id="proj4">
+          <div class="proj-front">
+            <div class="proj-meta">
+              <span class="proj-num mono">04 · 2023</span>
+            </div>
+            <h3 class="proj-title">Expense Tracker.</h3>
+            <p class="proj-tagline">Full-stack app with REST API integration</p>
+            <p class="proj-desc">Full-stack expense management app with live REST API data ingestion and React frontend
+              —
+              tracks income and expenses visually with real-time chart updates.</p>
+            <div class="proj-tech-row">
+              <span>React</span><span>REST API</span><span>JavaScript</span><span>CSS3</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://grvthakur.github.io/Expense-Tracker/" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              <a href="https://github.com/grvthakur/ExpenseTracker" target="_blank"><i class="fa-brands fa-github"></i>
+                Code</a>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj4')">app.log <span>⟲</span></button>
+          </div>
+          <div class="proj-back">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+              <span class="t-title mono">expense-tracker.log</span>
+            </div>
+            <div class="terminal-body">
+              <p class="tl"><span class="t-prompt">$</span> npm start</p>
+              <p class="tl"><span class="t-ok">✓</span> React app compiled · localhost:3000</p>
+              <p class="tl"><span class="t-ok">✓</span> REST API connected · live data</p>
+              <p class="tl"><span class="t-ok">✓</span> charts rendered · income vs expense</p>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj4')">← back</button>
+          </div>
+        </div>
+
+        <!-- PROJ 5 — FoodCart -->
+        <div class="proj-card" id="proj5">
+          <div class="proj-front">
+            <div class="proj-meta">
+              <span class="proj-num mono">05 · 2023</span>
+            </div>
+            <h3 class="proj-title">FoodCart.</h3>
+            <p class="proj-tagline">Live REST API data ingestion demo</p>
+            <p class="proj-desc">Food ordering platform consuming live REST APIs for real-time menu population —
+              demonstrates API data ingestion, Redux state management, and async data flow patterns.</p>
+            <div class="proj-tech-row">
+              <span>React</span><span>Redux</span><span>REST API</span><span>JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://grvthakur.github.io/FOODCart/" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              <a href="https://github.com/grvthakur/FOODCart" target="_blank"><i class="fa-brands fa-github"></i>
+                Code</a>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj5')">app.log <span>⟲</span></button>
+          </div>
+          <div class="proj-back">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+              <span class="t-title mono">foodcart.log</span>
+            </div>
+            <div class="terminal-body">
+              <p class="tl"><span class="t-prompt">$</span> npm start</p>
+              <p class="tl"><span class="t-ok">✓</span> REST API polled · menu data live</p>
+              <p class="tl"><span class="t-ok">✓</span> Redux store hydrated · 42 items</p>
+              <p class="tl"><span class="t-ok">✓</span> cart state managed · order ready</p>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj5')">← back</button>
+          </div>
+        </div>
+
+        <!-- PROJ 6 — MyQuote / Firebase -->
+        <div class="proj-card" id="proj6">
+          <div class="proj-front">
+            <div class="proj-meta">
+              <span class="proj-num mono">06 · 2022</span>
+            </div>
+            <h3 class="proj-title">MyQuote.</h3>
+            <p class="proj-tagline">Firebase NoSQL real-time CRUD</p>
+            <p class="proj-desc">Personal quotes diary with Firebase Realtime Database backend — demonstrates
+              NoSQL document data management, real-time read/write patterns, and cloud data persistence.</p>
+            <div class="proj-tech-row">
+              <span>Firebase</span><span>NoSQL</span><span>JavaScript</span><span>CRUD</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://quoteapp-7b81c.web.app/quotes" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj6')">app.log <span>⟲</span></button>
+          </div>
+          <div class="proj-back">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+              <span class="t-title mono">myquote.log</span>
+            </div>
+            <div class="terminal-body">
+              <p class="tl"><span class="t-prompt">$</span> firebase deploy</p>
+              <p class="tl"><span class="t-ok">✓</span> Firestore rules deployed</p>
+              <p class="tl"><span class="t-ok">✓</span> real-time listener active</p>
+              <p class="tl"><span class="t-ok">✓</span> CRUD operations verified</p>
+            </div>
+            <button class="flip-btn" onclick="flipCard('proj6')">← back</button>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+
+      <!-- DE Project Recommendations -->
+      <div class="project-recs">
+        <h3 class="recs-title"><span class="mono accent-text">$ recommend --type data-engineering-projects</span></h3>
+        <p class="recs-sub">Build these to dramatically strengthen your Data Engineer portfolio for recruiters:</p>
+        <div class="recs-grid">
+          <div class="rec-card">
+            <span class="rec-num mono">01</span>
+            <h4>Real-time Streaming Pipeline</h4>
+            <p>Kafka → Spark Structured Streaming → Delta Lake. Ingest live data (Twitter/stock prices via free APIs),
+              apply windowed aggregations, write to Delta. Shows streaming + lakehouse.</p>
+            <div class="rec-tech"><span>Kafka</span><span>Spark Streaming</span><span>Delta Lake</span></div>
+          </div>
+          <div class="rec-card">
+            <span class="rec-num mono">02</span>
+            <h4>dbt + Airflow Data Warehouse</h4>
+            <p>Build a mini DWH: Airflow for orchestration, dbt for SQL transformations with tests, load into Postgres
+              or Snowflake free tier. Shows modern DE stack recruiters love.</p>
+            <div class="rec-tech"><span>Apache Airflow</span><span>dbt</span><span>Snowflake / PG</span></div>
+          </div>
+          <div class="rec-card">
+            <span class="rec-num mono">03</span>
+            <h4>AWS Data Lake on S3</h4>
+            <p>Build a full medallion lake on AWS free tier: S3 + Glue Crawler + Athena for querying + QuickSight
+              dashboard. Shows cloud-native DE skills with AWS (your existing stack).</p>
+            <div class="rec-tech"><span>AWS S3</span><span>Glue</span><span>Athena</span><span>QuickSight</span></div>
+          </div>
+          <div class="rec-card">
+            <span class="rec-num mono">04</span>
+            <h4>Data Quality Monitoring Dashboard</h4>
+            <p>Great Expectations or Soda Core for DQ checks on a public dataset, results written to a DB, visualised
+              with Streamlit or Power BI Embedded. Shows your existing DQ expertise publicly.</p>
+            <div class="rec-tech"><span>Great Expectations</span><span>Streamlit</span><span>Power BI</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ 03 / SKILLS ══ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-eyebrow"><span class="mono">03 / Skills</span></div>
+      <h2 class="section-heading">The toolbox.</h2>
+      <p class="section-sub">Full data engineering stack with depth in the lakehouse and pipeline layers.</p>
+
+      <div class="skills-cols">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-fire"></i> Data Engineering Core</h3>
+          <div class="skill-tags">
+            <span class="stag">Apache Spark</span><span class="stag">PySpark</span>
+            <span class="stag">Delta Lake</span><span class="stag">Delta Live Tables</span>
+            <span class="stag">ETL / ELT</span><span class="stag">Medallion Architecture</span>
+            <span class="stag">Batch Processing</span><span class="stag">Data Modelling</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-database"></i> Databases &amp; SQL</h3>
+          <div class="skill-tags">
+            <span class="stag">MS SQL Server 2019/22</span><span class="stag">T-SQL</span>
+            <span class="stag">Stored Procedures</span><span class="stag">Query Optimisation</span>
+            <span class="stag">Execution Plans</span><span class="stag">Indexing</span>
+            <span class="stag">MySQL</span><span class="stag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">⬡ Databricks &amp; Lakehouse</h3>
+          <div class="skill-tags">
+            <span class="stag">Databricks Workflows</span><span class="stag">Unity Catalog</span>
+            <span class="stag">Lakehouse Platform</span><span class="stag">ACID Compliance</span>
+            <span class="stag">Data Governance</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-brands fa-aws"></i> Cloud &amp; Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="stag">AWS S3</span><span class="stag">AWS EC2</span>
+            <span class="stag">OpenShift</span><span class="stag">Linux</span><span class="stag">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-code"></i> Languages &amp; Integration</h3>
+          <div class="skill-tags">
+            <span class="stag">Python</span><span class="stag">PowerShell</span>
+            <span class="stag">REST APIs</span><span class="stag">JSON Processing</span>
+            <span class="stag">XML</span><span class="stag">Denodo</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-chart-bar"></i> Analytics &amp; Visualisation</h3>
+          <div class="skill-tags">
+            <span class="stag">Microsoft Power BI</span><span class="stag">Excel</span>
+            <span class="stag">Data Validation</span><span class="stag">HP ALM</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pipeline flow -->
+      <div class="pipeline-strip">
+        <div class="pipe-stage">
+          <div class="pipe-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+          <div class="pipe-label">Ingest</div>
+          <div class="pipe-sub mono">REST · S3 · SQL</div>
+        </div>
+        <div class="pipe-connector">
+          <div class="pipe-dot"></div>
+        </div>
+        <div class="pipe-stage">
+          <div class="pipe-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="pipe-label">Transform</div>
+          <div class="pipe-sub mono">PySpark · T-SQL</div>
+        </div>
+        <div class="pipe-connector">
+          <div class="pipe-dot"></div>
+        </div>
+        <div class="pipe-stage">
+          <div class="pipe-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="pipe-label">Validate</div>
+          <div class="pipe-sub mono">DQ · ACID · Unity</div>
+        </div>
+        <div class="pipe-connector">
+          <div class="pipe-dot"></div>
+        </div>
+        <div class="pipe-stage">
+          <div class="pipe-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="pipe-label">Serve</div>
+          <div class="pipe-sub mono">Power BI · APIs</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ DE ANIMATION SECTION ══ -->
+  <section class="section de-anim-section" id="what-i-do">
+    <div class="section-inner">
+      <div class="section-eyebrow"><span class="mono">What Data Engineers Do</span></div>
+      <h2 class="section-heading">Turning raw data<br /><em>into decisions.</em></h2>
+      <p class="section-sub">Every number a business acts on passed through a pipeline like these. Here's what that
+        looks like.</p>
+
+      <div class="de-pipeline-anim" id="dePipelineAnim">
+        <!-- Animated pipeline stages -->
+        <div class="de-stage" id="deStage1">
+          <div class="de-stage-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="de-stage-label">Raw Sources</div>
+          <div class="de-stage-sub mono">APIs · DBs · Files · Streams</div>
+          <div class="de-data-packets" id="packets1"></div>
+        </div>
+        <div class="de-arrow" id="deArrow1">
+          <svg viewBox="0 0 80 20" fill="none">
+            <path d="M0 10 L70 10" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3" />
+            <polygon points="70,5 80,10 70,15" fill="var(--accent)" />
+          </svg>
+          <span class="de-arrow-label mono">Ingest</span>
+        </div>
+        <div class="de-stage" id="deStage2">
+          <div class="de-stage-icon bronze-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="de-stage-label">Bronze Layer</div>
+          <div class="de-stage-sub mono">Raw · Unvalidated · Timestamped</div>
+        </div>
+        <div class="de-arrow" id="deArrow2">
+          <svg viewBox="0 0 80 20" fill="none">
+            <path d="M0 10 L70 10" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3" />
+            <polygon points="70,5 80,10 70,15" fill="var(--accent)" />
+          </svg>
+          <span class="de-arrow-label mono">Transform</span>
+        </div>
+        <div class="de-stage" id="deStage3">
+          <div class="de-stage-icon silver-icon"><i class="fa-solid fa-filter"></i></div>
+          <div class="de-stage-label">Silver Layer</div>
+          <div class="de-stage-sub mono">Cleaned · Deduped · Typed</div>
+        </div>
+        <div class="de-arrow" id="deArrow3">
+          <svg viewBox="0 0 80 20" fill="none">
+            <path d="M0 10 L70 10" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3" />
+            <polygon points="70,5 80,10 70,15" fill="var(--accent)" />
+          </svg>
+          <span class="de-arrow-label mono">Aggregate</span>
+        </div>
+        <div class="de-stage" id="deStage4">
+          <div class="de-stage-icon gold-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="de-stage-label">Gold Layer</div>
+          <div class="de-stage-sub mono">Business-ready · Served</div>
+        </div>
+      </div>
+
+      <!-- Live counter row showing data moving -->
+      <div class="de-metrics-row">
+        <div class="de-metric">
+          <span class="de-metric-n" id="metricRows">0</span>
+          <span class="de-metric-l mono">rows ingested</span>
+        </div>
+        <div class="de-metric">
+          <span class="de-metric-n" id="metricPassed">0</span>
+          <span class="de-metric-l mono">DQ checks passed</span>
+        </div>
+        <div class="de-metric">
+          <span class="de-metric-n" id="metricLatency">0ms</span>
+          <span class="de-metric-l mono">avg latency</span>
+        </div>
+        <div class="de-metric">
+          <span class="de-metric-n accent-text">✓</span>
+          <span class="de-metric-l mono">pipeline healthy</span>
+        </div>
+      </div>
+
+      <!-- Terminal showing what's happening -->
+      <div class="hero-terminal de-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+          <span class="t-title mono">medallion_pipeline.py · live</span>
+          <span class="t-live mono">● LIVE</span>
+        </div>
+        <div class="terminal-body" id="deTerminalBody">
+          <p class="tl"><span class="t-prompt">$</span> pyspark --master yarn --deploy-mode cluster</p>
+          <p class="tl"><span class="t-ok">✓</span> SparkSession initialised · executors: 4 · cores: 8</p>
+          <p class="tl de-log-line"><span class="t-ok">✓</span> REST API: 2,417,832 rows ingested → S3/Bronze</p>
+          <p class="tl de-log-line"><span class="t-ok">✓</span> PySpark transform: null drop · type cast · dedup</p>
+          <p class="tl de-log-line"><span class="t-ok">✓</span> DQ framework: 142 checks · 0 failures · ACID commit</p>
+          <p class="tl de-log-line"><span class="t-ok">✓</span> Gold aggregates written · Power BI refresh triggered</p>
+          <p class="tl de-log-line"><span class="t-stat">pipeline complete · 3.1s · next run: 06:00 UTC</span></p>
+          <p class="tl"><span class="t-prompt">$</span> <span class="cursor">▊</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ 04 / EXPERIENCE ══ -->
+  <section class="section section-dark" id="experience">
+    <div class="section-inner">
+      <div class="section-eyebrow"><span class="mono">04 / Experience</span></div>
+      <h2 class="section-heading">Where I've shipped.</h2>
+
+      <div class="exp-list">
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-period mono">Apr 2023 — Present</span>
+            <span class="exp-badge active-badge">Current</span>
+          </div>
+          <h3 class="exp-title">TCS · System Engineer (Data Engineer)</h3>
+          <p class="exp-location mono dim">Tata Consultancy Services · Pune, India</p>
+          <ul class="exp-bullets">
+            <li>Designed and maintained ETL/ELT pipelines ingesting from external REST APIs into MS SQL Server — parsing
+              JSON payloads into structured relational tables serving downstream analytics.</li>
+            <li>Built a SQL-based <strong>data quality &amp; validation framework</strong> applying integrity checks
+              across production datasets — reduced data discrepancies by <strong>25%</strong>.</li>
+            <li>Engineered optimized T-SQL stored procedures, functions, and triggers powering batch transformation
+              workflows — cut processing time by <strong>~40%</strong>.</li>
+            <li>Designed indexing strategies and analysed execution plans to maximise pipeline throughput in high-volume
+              OLTP environments.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>ETL/ELT</span><span>T-SQL</span><span>Data Quality</span><span>REST APIs</span><span>MS SQL
+              Server</span>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-period mono">Apr 2022 — Mar 2023</span>
+          </div>
+          <h3 class="exp-title">TCS · Asst. System Engineer (Data Engineer)</h3>
+          <p class="exp-location mono dim">Tata Consultancy Services · Pune, India</p>
+          <ul class="exp-bullets">
+            <li>Developed <strong>Denodo virtual data layer</strong> views exposing SQL Server datasets via REST web
+              service — decoupling storage from consumption layers.</li>
+            <li>Built Python/PowerShell data ingestion pipeline extracting JSON from UMS interface API → batch-loading
+              to SQL Server staging tables, automating a fully manual process.</li>
+            <li>Managed deployments of pipeline code and database objects across QA and production environments.</li>
+            <li>Surfaced real-time operational data via React frontend consuming backend data APIs.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>PowerShell</span><span>Denodo</span><span>JSON Ingestion</span><span>React</span>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-period mono">Apr 2021 — Mar 2022</span>
+          </div>
+          <h3 class="exp-title">TCS · Asst. System Engineer Trainee (Data Engineer)</h3>
+          <p class="exp-location mono dim">Tata Consultancy Services · Pune, India</p>
+          <ul class="exp-bullets">
+            <li>Contributed to the Manufacturing Inventory Database (MIND) project — multi-source ingestion (SQL, REST
+              APIs, Excel, XML) into a unified data layer aligned with Medallion Architecture.</li>
+            <li>Developed staging-to-production loading pipelines using T-SQL cursors, triggers, and transaction
+              management.</li>
+            <li>Created SQL Agent Jobs automating recurring data refresh — eliminated manual intervention.</li>
+            <li>Designed normalised MS SQL Server schemas: tables, constraints, clustered/non-clustered indexes.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Medallion Architecture</span><span>T-SQL</span><span>SQL Agent</span><span>Data Modelling</span>
+          </div>
+        </div>
+
+        <div class="exp-item edu-item">
+          <div class="exp-meta">
+            <span class="exp-period mono">2016 — 2020</span>
+          </div>
+          <h3 class="exp-title">Education</h3>
+          <p class="exp-location mono dim">B.E. Electrical &amp; Electronics · Birla Institute of Technology, Ranchi</p>
+          <p style="color:var(--text-muted);font-size:.88rem">CGPA: 6.6 / 10.0 · Matriculation: 10.0 CGPA</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 05 / CERTIFICATIONS ══ -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <div class="section-eyebrow"><span class="mono">05 / Certifications</span></div>
+      <h2 class="section-heading">Credentials.</h2>
+
       <div class="certs-grid">
-
-        <div class="cert-card cert-card--highlight">
-          <div class="cert-badge"><i class="fa-solid fa-award"></i></div>
+        <div class="cert-card cert-highlight">
+          <div class="cert-glow"></div>
+          <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
           <div class="cert-body">
-            <span class="cert-issuer">Databricks</span>
+            <span class="cert-issuer mono">Databricks</span>
             <h3 class="cert-name">Certified Data Engineer Professional</h3>
-            <span class="cert-date">Mar 2026</span>
+            <span class="cert-date mono">Mar 2026</span>
           </div>
-          <div class="cert-tier cert-tier--pro">Professional</div>
+          <span class="cert-level pro">Professional</span>
         </div>
-
-        <div class="cert-card cert-card--highlight">
-          <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <div class="cert-card cert-highlight">
+          <div class="cert-glow"></div>
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
           <div class="cert-body">
-            <span class="cert-issuer">Databricks</span>
+            <span class="cert-issuer mono">Databricks</span>
             <h3 class="cert-name">Certified Data Engineer Associate</h3>
-            <span class="cert-date">Oct 2025</span>
+            <span class="cert-date mono">Oct 2025</span>
           </div>
-          <div class="cert-tier cert-tier--assoc">Associate</div>
+          <span class="cert-level assoc">Associate</span>
         </div>
-
         <div class="cert-card">
-          <div class="cert-badge cert-badge--sm"><i class="fa-brands fa-js"></i></div>
+          <div class="cert-icon sm"><i class="fa-solid fa-database"></i></div>
           <div class="cert-body">
-            <span class="cert-issuer">Udemy</span>
-            <h3 class="cert-name">The Complete JavaScript Course</h3>
-            <span class="cert-date">Jan 2023</span>
-          </div>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-badge cert-badge--sm"><i class="fa-solid fa-database"></i></div>
-          <div class="cert-body">
-            <span class="cert-issuer">Udemy</span>
+            <span class="cert-issuer mono">Udemy</span>
             <h3 class="cert-name">PL/SQL by Example — Beginner to Advanced</h3>
-            <span class="cert-date">Aug 2022</span>
+            <span class="cert-date mono">Aug 2022</span>
           </div>
         </div>
-
         <div class="cert-card">
-          <div class="cert-badge cert-badge--sm"><i class="fa-solid fa-globe"></i></div>
+          <div class="cert-icon sm"><i class="fa-brands fa-js"></i></div>
           <div class="cert-body">
-            <span class="cert-issuer">Udemy</span>
+            <span class="cert-issuer mono">Udemy</span>
+            <h3 class="cert-name">The Complete JavaScript Course</h3>
+            <span class="cert-date mono">Jan 2023</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon sm"><i class="fa-solid fa-globe"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer mono">Udemy</span>
             <h3 class="cert-name">The Web Developer Bootcamp</h3>
-            <span class="cert-date">Aug 2022</span>
+            <span class="cert-date mono">Aug 2022</span>
           </div>
         </div>
-
         <div class="cert-card">
-          <div class="cert-badge cert-badge--sm"><i class="fa-solid fa-table"></i></div>
+          <div class="cert-icon sm"><i class="fa-solid fa-table"></i></div>
           <div class="cert-body">
-            <span class="cert-issuer">Sololearn</span>
+            <span class="cert-issuer mono">Sololearn</span>
             <h3 class="cert-name">SQL</h3>
-            <span class="cert-date">Jul 2022</span>
+            <span class="cert-date mono">Jul 2022</span>
           </div>
         </div>
-
       </div>
 
-      <!-- Recommended next certs -->
-      <div class="certs-recommended">
-        <h3 class="certs-rec-title"><i class="fa-solid fa-road"></i> Recommended Next Certifications</h3>
-        <div class="certs-rec-grid">
-          <div class="cert-rec-card">
-            <i class="fa-brands fa-aws"></i>
-            <span>AWS Certified Data Engineer – Associate</span>
+      <!-- Recommended -->
+      <div class="cert-recs">
+        <h3 class="cert-recs-title mono accent-text">$ recommend --next certifications</h3>
+        <div class="cert-recs-grid">
+          <div class="cert-rec"><i class="fa-brands fa-aws"></i><span>AWS Certified Data Engineer – Associate</span>
           </div>
-          <div class="cert-rec-card">
-            <i class="fa-solid fa-snowflake"></i>
-            <span>SnowPro Core (Snowflake)</span>
-          </div>
-          <div class="cert-rec-card">
-            <i class="fa-brands fa-google"></i>
-            <span>Google Professional Data Engineer</span>
-          </div>
-          <div class="cert-rec-card">
-            <i class="fa-solid fa-wind"></i>
-            <span>Apache Airflow Fundamentals (Astronomer)</span>
+          <div class="cert-rec"><i class="fa-solid fa-snowflake"></i><span>SnowPro Core (Snowflake)</span></div>
+          <div class="cert-rec"><i class="fa-brands fa-google"></i><span>Google Professional Data Engineer</span></div>
+          <div class="cert-rec"><i class="fa-solid fa-wind"></i><span>Apache Airflow Fundamentals (Astronomer)</span>
           </div>
         </div>
       </div>
@@ -624,37 +833,28 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
-  <section class="section section-contact" id="contact">
-    <div class="section-container">
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="contact-sub">Open to Data Engineering roles, collaborations, and conversations about data
-        infrastructure. My inbox is always open.</p>
-
-      <a href="mailto:thakurg457@gmail.com" class="contact-email-btn">
-        <i class="fa-solid fa-envelope"></i>
-        thakurg457@gmail.com
-      </a>
-
+  <!-- ══ 06 / CONTACT ══ -->
+  <section class="section section-dark" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-eyebrow"><span class="mono">06 / Contact</span></div>
+      <h2 class="section-heading">Let's build pipelines<br /><em>that actually scale.</em></h2>
+      <p class="contact-sub">Open to Data Engineering roles, freelance pipeline work, and conversations about data
+        infrastructure. Especially interested in Spark/lakehouse or cloud-native DE environments.</p>
+      <a href="mailto:thakurg457@gmail.com" class="contact-email">thakurg457@gmail.com</a>
       <div class="contact-socials">
-        <a href="https://github.com/grvthakur" target="_blank" class="social-btn" title="GitHub"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/gaurav-thakur-749547105/" target="_blank" class="social-btn"
-          title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://twitter.com/grv_here" target="_blank" class="social-btn" title="Twitter"><i
-            class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com/grv.here/" target="_blank" class="social-btn" title="Instagram"><i
-            class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/grvthakur" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/gaurav-thakur-749547105/" target="_blank"><i
+            class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        <a href="https://twitter.com/grv_here" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
       </div>
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
+  <!-- ══ FOOTER ══ -->
   <footer class="site-footer">
-    <div class="footer-container">
-      <p>Designed &amp; Built by <strong>Gaurav Thakur</strong> · Data Engineer</p>
-      <p class="footer-copy">© 2026 · Pune, India · <a href="mailto:thakurg457@gmail.com">thakurg457@gmail.com</a></p>
+    <div class="footer-inner">
+      <span class="mono dim">© 2026 Gaurav Thakur · Data Engineer · Pune, India</span>
+      <span class="mono dim">Built with HTML, CSS, JS · Hosted on GitHub Pages</span>
     </div>
   </footer>
 
